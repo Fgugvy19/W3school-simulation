@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+    <h1>HTML Attributes</h1>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <p>HTML attributes provide additional information about HTML elements.</p>
+
+    <hr>
+    <h2>HTML Attributes</h2>
+    <ul>
+        <li>All HTML elements can have attributes</li>
+        <li>Attributes provide additional information about elements</li>
+        <li>Attributes are always specified in the start tag</li>
+        <li>Attributes usually come in name/value pairs like: name="value"</li>
+    </ul>
+    <br>
+    <hr>
+    <h2>The href Attribute</h2>
+    <p>The <code class="crimson-p"><b>&lt;a&gt;</b></code> tag defines a hyperlink. The href attribute specifies the URL
+        of the page the link goes to:</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code>
+            <code class="brown">img</code>
+            <code class="tomato">src</code>
+            <code class="blue">="img_girl.jpg"&gt;</code>
+        </div>
+    </div>
+    <p>There are two ways to specify the URL in the <code class="crimson-p">src</code> attribute:</p>
+    <p><span class="boldy">1. Absolute URL </span>- Links to an external image that is hosted on another website.
+        Example:
+        <br> src="https://www.w3schools.com/images/img_girl.jpg".
+
+    </p>
+    <br>
+    <p><span class="boldy">Notes:</span> External images might be under copyright. If you do not get permission to use
+        it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly
+        be removed or changed.</p>
+    <br>
+    <p><span class="boldy">2. Relative URL </span>- Links to an image that is hosted within the website. Here, the URL
+        does not include the domain name. If the URL begins without a slash, it will be relative to the current page.
+        Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example:
+        src="/images/img_girl.jpg".</p>
+    <p><span class="boldy">Tip:</span> It is almost always best to use relative URLs. They will not break if you change
+        domain.</p>
+    <br>
+    <hr>
+    <h2>The width and height Attributes</h2>
+    <p>The <code class="crimson-p">&lt;img&gt;</code> tag should also contain the <code class="crimson-p">width</code>
+        and <code class="crimson-p"> height</code> attributes, which
+        specify the width and height of the image (in pixels):
+    </p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">img</code>
+
+            <code class="tomato">src</code><code class="blue">="img_girl.jpg" </code>
+
+            <code class="tomato"> width </code><code class="blue">="500"</code>
+
+            <code class="tomato"> height</code><code class="blue">="600"</code><code class="blue">&gt;</code>
+        </div>
+    </div>
+    <br>
+    <h2>The alt Attribute</h2>
+    <p>The required <code class="crimson-p">alt</code> attribute for the <code class="crimson-p">&lt;img&gt;</code> tag
+        specifies an alternate text for an
+        image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in
+        the <code class="crimson-p">src</code> attribute, or if the user uses a screen reader.</p>
+    <br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">img</code>
+            <code class="tomato">src</code><code class="blue">="img_girl.jpg"&gt;</code>
+
+            <code class="tomato">alt</code><code class="blue">="Girl with a jacket"&gt;</code>
+        </div>
+    </div>
+    <div class="b-code-box">
+        <h3 class="nopad">Example</h3>
+        <p>See what happens if we try to display an image that does not exist:</p>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">img</code>
+            <code class="tomato">src</code><code class="blue">="img_typo.jpg"&gt;</code>
+
+            <code class="tomato">alt</code><code class="blue">="Girl with a jacket"&gt;</code>
+        </div>
+    </div>
+    <br>
+    <p>You will learn more about images later in our <a href="" target="_blank" class="visit1">HTML
+            Images
+            chapter</a>.</p>
+    <br>
+    <hr><br><br>
+    <hr>
+    <h2>The style Attribute</h2>
+    <p>The <code class="crimson-p">style</code> attribute is used to add styles to an element, such as color, font,
+        size, and more.</p>
+    <div class="b-code-box">
+        <h3 class="nopad">Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">p</code>
+            <code class="tomato">style</code><code class="blue">="color:red;"&gt;</code>
+            <span>This is a red paragraph.</span>
+            <code class="blue">&lt;</code><code class="brown">/p</code><code class="blue">&gt;</code>
+        </div>
+    </div>
+    <p>You will learn more about styles in our <a href="" target="_blank" class="visit2">HTML Styles chapter</a>.</p>
+    <br>
+    <hr>
+</body>
+
+</html>

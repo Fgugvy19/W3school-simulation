@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="back.css">
+    <title>audio html</title>
+</head>
+
+<body>
+    <h1>Background color</h1>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <p>The CSS background properties are used to add background effects for elements.</p><br>
+
+
+    <div class="back">
+
+        <p>In these chapters, you will learn about the following CSS background properties:</p>
+        <br><br>
+        <ul>
+            <li class="brown">background-color</li>
+            <li class="brown">background-image</li>
+            <li class="brown">background-repeat</li>
+            <li class="brown">background-attachment</li>
+            <li class="brown">background-position</li>
+            <li class="brown">background <span class="normal"> (shorthand property)</span></li>
+        </ul>
+        <br><br>
+    </div>
+    <hr>
+    <h2>CSS background-color</h2>
+    <p>The <span class="crimson-p">background-color</span> property specifies the background color of an element.</p>
+    <br><br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="brown">body </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">lightblue</code><code>;</code>
+            <br><code>}</code>
+            <br>
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr><br>
+    <p>With CSS, a color is most often specified by:</p>
+    <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+
+    </ul>
+    <p>Look at CSS Color Values for a complete list of possible color values.</p>
+    <br>
+    <hr>
+    <h2>Other Elements</h2>
+    <p>You can set the background color for any HTML elements:</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <p>Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different background colors:</p>
+        <div class="s-code-box">
+            <code class="brown">h1 </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">green</code><code>;</code>
+            <br><code>}</code>
+            <br>
+            <code class="brown">div </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">lightblue</code><code>;</code>
+            <br><code>}</code>
+            <br>
+            <code class="brown">p </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">yellow</code><code>;</code>
+            <br><code>}</code>
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr><br>
+    <h2>Opacity / Transparency</h2>
+    <p>The <span class="crimson-p">opacity</span> property specifies the opacity/transparency of an element. It can take
+        a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+    <br>
+    <img src="Screenshot 2024-08-23 172718.png" alt="no images" width="100%"><br>
+
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="brown">div </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">lightblue</code><code>;</code>
+            <br>
+            <br>
+            <code class="tomato">opacity</code><code>: </code><code class="blue">0.3</code><code>;</code>
+            <br><code>}</code>
+            <br>
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr><br>
+    <p class="note"><span class="big">Note:</span> When using the opacity property to add transparency to the background
+        of an
+        element, all of its child elements inherit the same transparency. This can make the text inside a fully
+        transparent element hard to read.</p>
+    <br>
+    <hr>
+    <h2>Transparency using RGBA</h2>
+    <p>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The
+        following example sets the opacity for the background color and not the text:</p><br>
+    <img src="Screenshot 2024-08-23 173545.png" alt="no img" width="100%"><br>
+    <p>You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use
+        an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color.</p>
+    <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0
+        (fully transparent) and 1.0 (fully opaque).</p><br>
+    <p><span class="big">Tip:</span> You will learn more about RGBA Colors in our CSS Colors Chapter.</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="brown">div </code><code>{</code><br>
+            <code class="tomato">background-color</code><code>: </code><code class="blue">rgba(0, 128, 0, 0.3) </code>
+            <code class="green">/* Green background with 30% opacity */</code><code>;</code>
+            <br>
+            <br>
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr><br><br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

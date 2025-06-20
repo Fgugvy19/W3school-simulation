@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="audio.css">
+    <title>audio html</title>
+</head>
+
+<body>
+    <h1>HTML Audio</h1>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <p>The HTML <code class="crimson-p">audio</code> element is used to show a video on a web page.</p>
+    <br>
+    <hr>
+    <h2>The HTML &lt;audio&gt; Element</h2>
+    <p>To play an audio file in HTML, use the <code class="crimson-p">audio</code> element:</p>
+    <br>
+    <hr>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="blue">&lt;</code><code class="brown">audio </code><code class="tomato">controls</code><code
+                class="blue">&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.ogg" </code>
+            <code class="tomato">type</code><code class="blue">="audio/ogg"&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.mp3" </code>
+            <code class="tomato">type</code><code class="blue">="audio/mp3"&gt;</code>
+            <br>
+            <span>Your browser does not support the video tag.</span>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">/audio</code></code><code class="blue">&gt;</code>
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>HTML Audio - How It Works</h2>
+    <p>The <code class="crimson-p">controls</code> attribute adds audio controls, like play, pause, and volume.</p>
+    <p>The <code class="crimson-p">&lt;source&gt;</code> element allows you to specify alternative audio files which the
+        browser may choose from. The browser will use the first recognized format.</p>
+    <p>The text between the <code class="crimson-p">&lt;audio&gt;</code> and <code
+            class="crimson-p">&lt;/audio&gt;</code> tags will only be displayed in browsers that do not support the
+        <code class="crimson-p">&lt;audio&gt;</code> element.
+    </p>
+    <br>
+    <hr>
+    <h2>HTML &lt;audio&gt; Autoplay</h2>
+    <p>To start an audio file automatically, use the <code class="crimson-p">autoplay</code> attribute:</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="blue">&lt;</code><code class="brown">audio </code><code
+                class="tomato">controls autoplay</code><code class="blue">&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.ogg" </code>
+            <code class="tomato">type</code><code class="blue">="audio/ogg"&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.mp3" </code>
+            <code class="tomato">type</code><code class="blue">="audio/mp3"&gt;</code>
+            <br>
+            <span>Your browser does not support the video tag.</span>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">/audio</code></code><code class="blue">&gt;</code>
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <p class="note"><span class="boldy">Note: </span>Chromium browsers do not allow autoplay in most cases. However,
+        muted autoplay is always allowed.</p>
+    <br>
+    <p>Add <code class="crimson-p">muted</code> after <code class="crimson-p">autoplay</code> to let your audio file
+        start playing automatically (but muted):</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="blue">&lt;</code><code class="brown">audio </code><code
+                class="tomato">controls autoplay muted</code><code class="blue">&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.ogg" </code>
+            <code class="tomato">type</code><code class="blue">="audio/ogg"&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">source </code><code class="tomato">src</code><code
+                class="blue">="horse.mp3" </code>
+            <code class="tomato">type</code><code class="blue">="audio/mp3"&gt;</code>
+            <br>
+            <span>Your browser does not support the video tag.</span>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">/audio</code></code><code class="blue">&gt;</code>
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>Browser Support</h2>
+    <h2>Browser Support</h2>
+    <p>The numbers in the table specify the first browser version that fully supports the <code
+            class="crimson-p">&lt;audio&gt;</video></code> element.</p>
+    <table class="browsres">
+        <tbody>
+            <tr>
+                <th>Element</th>
+                <th><img src="download.png" alt="chrome" width="60%"></th>
+                <th><img src="download.jpeg" alt="edge" width="60%"></th>
+                <th><img src="download (1).png" alt="firefox" width="60%"></th>
+                <th><img src="download (1).jpeg" alt="safari" width="50%"></th>
+                <th><img src="download (2).jpeg" alt="opera" width="60%"></th>
+            </tr>
+            <tr class="tab-color">
+                <th>&lt;video&gt;</th>
+                <th>4.0</th>
+                <th>9.0</th>
+                <th>3.5</th>
+                <th>4.0</th>
+                <th>10.5</th>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <h2>HTML Audio Formats</h2>
+    <table class="format">
+        <tbody>
+            <tr>
+                <th>Browser</th>
+                <th>MP4</th>
+                <th>WebM</th>
+                <th>Ogg</th>
+            </tr>
+            <tr class="tab-color">
+                <th>Edge/IE </th>
+                <th>YES</th>
+                <th>YES*</th>
+                <th>YES*</th>
+            </tr>
+            <tr>
+                <th>Chrome</th>
+                <th>YES</th>
+                <th>YES</th>
+                <th>YES</th>
+
+            </tr>
+            <tr class="tab-color">
+                <th>Firefox</th>
+                <th>YES</th>
+                <th>YES</th>
+                <th>YES</th>
+            </tr>
+            <tr>
+                <th>safari</th>
+                <th>YES</th>
+                <th>YES</th>
+                <th>No</th>
+            </tr>
+            <tr class="tab-color">
+                <th>opera</th>
+                <th>YES</th>
+                <th>YES</th>
+                <th>YES</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>*From Edge 79</p>
+    <hr>
+    <h2>HTML audio - Media Types</h2>
+    <table class="bor">
+        <tbody>
+            <tr>
+                <th>File Format </th>
+                <th>Media Type</th>
+            </tr>
+            <tr class="tab-color">
+                <th>MP4</th>
+                <th>video/mp4</th>
+            </tr>
+            <tr>
+                <th>WebM</th>
+                <th>video/webm</th>
+            </tr>
+            <tr class="tab-color">
+                <th>Ogg</th>
+                <th>video/ogg</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <h2>HTML Video Tags</h2>
+    <table class="tags">
+        <tbody>
+            <tr>
+                <th class="less">Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr class="tab-color">
+                <th class="less">&lt;audio&gt;</th>
+                <th>Defines sound content</th>
+            </tr>
+            <tr>
+                <th class="less">&lt;source&gt;</th>
+                <th>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</th>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a><a href="" class="next"
+            target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

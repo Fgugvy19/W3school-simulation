@@ -1,0 +1,167 @@
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 100px 250px 40px;
+    box-sizing: content-box;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+    margin: 30px 0;
+    font-size: x-large;
+    padding: 20px 0;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+.prev {
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-color: #04AA6D;
+    border-radius: 5px;
+}
+
+.next {
+
+    float: right;
+
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-color: #04AA6D;
+    border-radius: 5px;
+}
+
+.crimson-p {
+    color: crimson;
+    background-color: #eee;
+}
+
+.b-code-box {
+    background-color: #eee;
+    width: auto;
+    height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin-bottom: 0%;
+}
+
+.s-code-box {
+    background-color: white;
+    width: auto;
+    height: max-content;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+video {
+    display: inline-block;
+    max-width: 100%;
+    overflow: clip;
+    padding-left: 15%;
+}
+
+.try-it {
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 14px 25px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-color: #04AA6D;
+    border-radius: 5px;
+
+}
+
+.blue {
+    color: blue;
+}
+
+.brown {
+    color: brown;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.boldy {
+    font-weight: bold;
+
+}
+
+.note {
+    background-color: rgba(251, 255, 0, 0.319);
+    padding: 15px;
+    border: 15px solid rgba(251, 255, 0, 0.319);
+
+}
+
+.browsres th {
+    border: 1px solid #ddd;
+    text-align: left;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+.tab-color {
+    background-color: #eee;
+}
+
+th {
+    max-width: 5px;
+    text-align: left;
+}
+
+th img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.format {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.bor {
+    border: 1px solid#ddd;
+    text-align: left;
+}
+
+.tags {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.less {
+    width: 20%;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+
+<body>
+    <h1>HTML Canvas Graphics</h1>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <img src="Screenshot 2024-08-18 073048.png" alt="Canvas" class="img1" width="270" height="160">
+    <p class="p1">The HTML <code class="crimson-p">&lt;canvas&gt;</code> element is used to draw graphics on a web page.
+    </p><br>
+    <br>
+    <p>The graphic to the left is created with <code class="crimson-p">&lt;canvas&gt;</code>. It shows four elements: a
+        red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.</p>
+    <br>
+    <hr>
+    <h2>What is HTML Canvas?</h2>
+    <p>The HTML <code class="crimson-p">&lt;canvas&gt;</code> element is used to draw graphics, on the fly, via
+        JavaScript.</p>
+    <p>The <code class="crimson-p">&lt;canvas&gt;</code> element is only a container for graphics. You must use
+        JavaScript to actually draw the graphics.</p>
+    <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+    <p>Canvas is supported by all major browsers.</p>
+    <br>
+    <hr>
+    <h2>Canvas Examples</h2>
+    <p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+    <p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+    <div class="box">
+        <code class="blue">&lt;</code><code class="brown">canvas </code><code class="tomato">id</code><code
+            class="blue">="myCanvas"</code> <code class="tomato">width</code><code class="blue">="200"</code> <code
+            class="tomato">height</code><code class="blue">="100"</code> <code class="tomato">style</code><code
+            class="blue">="border:1px solid #000000;"&gt;</code>
+
+    </div>
+    <br>
+    <p><span class="bold">Note:</span> Always specify an id attribute (to be referred to in a script), and a width
+        and height attribute to define the size of the canvas. To add a border, use the style attribute.</p>
+    <p>Here is an example of a basic, empty canvas:</p>
+    <br>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+    <br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="blue">&lt;</code><code class="brown">canvas </code><code class="tomato">id</code><code
+                class="blue">"mycanvas"</code> <code class="tomato">width</code><code class="blue">="200"</code> <code
+                class="tomato">height</code><code class="blue">="100"</code> <code class="tomato">style</code><code
+                class="blue">="border:1px solid #000000;"&gt;</code><br>
+            <code class="blue">&lt;</code><code class="brown">/canvas </code><code class="blue">&gt;</code>
+
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>Add a JavaScript</h2>
+    <p>After creating the rectangular canvas area, you must add a JavaScript to do the drawing.</p>
+    <p>Here are some examples:</p>
+    <p class="big">Draw a Line</p>
+    <img src="Screenshot 2024-08-18 081738.png" alt="ur browser doesnt suppoet img">
+    <br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br>
+            <code>ctx.moveTo(</code><code class="tomato"> 0 </code> <code>, </code><code class="tomato">0 </code>
+            <code>);</code><br>
+            <code>ctx.lineTo(</code><code class="tomato"> 200 </code> <code>, </code><code class="tomato">100 </code>
+            <code>);</code><br>
+            <code>ctx.stroke();</code><br>
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <p class="big">Draw a Circle</p>
+    <img src="Screenshot 2024-08-18 114740.png" alt="ur browser doesnt support images">
+    <br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br>
+            <code>ctx.moveTo(</code><code class="tomato"> 0 </code> <code>, </code><code class="tomato">0 </code>
+            <code>);</code><br>
+            <code>ctx.beginPath();</code><br>
+            <code>ctx.arc(</code><code class="tomato"> 95 </code> <code>, </code><code
+                class="tomato">50 </code><code>, </code><code class="tomato">40 </code><code>, </code><code
+                class="tomato">0 </code><code>, </code><code class="tomato">2 </code>
+            <code>* Math.PI);</code><br>
+            <code>ctx.stroke();</code><br>
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <p class="big">Draw a Text</p>
+    <img src="Screenshot 2024-08-18 115602.png" alt="ur browser doesnt support images">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br>
+            <code>ctx.font = </code><code class="brown">"30px Arial"</code><code>;</code><br>
+
+            <code>ctx.fillText(</code> <code class="brown">"Hello World"</code><code>,</code><code>,</code><code
+                class="tomato"> 10</code> <code>,</code><code class="tomato"> 50</code><code>);</code><br>
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <p class="big">Stroke Text</p>
+    <img src="Screenshot 2024-08-18 122858.png" alt="no support">
+
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br>
+            <code>ctx.font = </code><code class="brown">"30px Arial"</code><code>;</code><br>
+
+            <code>ctx.strokeText(</code> <code class="brown">"Hello World"</code><code>,</code><code
+                class="tomato"> 10</code> <code>,</code><code class="tomato"> 50</code><code>);</code><br>
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <p class="big">Draw Linear Gradient</p>
+    <img src="Screenshot 2024-08-18 123302.png" alt="no support">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br><br>
+
+            <code class="green">// Create gradient</code><br>
+
+            <code class="blue">var</code><code> grd = ctx.createLinearGradient(</code><code class="tomato">0</code>
+            <code> ,</code></code><code class="tomato">0</code> <code>,</code></code><code class="tomato"> 200</code>
+            <code>,</code></code><code class="tomato"> 0</code><code>);</code><br>
+
+            <code>grd.addColorStop(</code> <code class="tomato">0</code> <code> ,</code><code
+                class="brown">"red"</code><code>);</code><br>
+            <code>grd.addColorStop(</code> <code class="tomato">1</code> <code> ,</code><code
+                class="brown">"white"</code><code>);</code><br><br>
+
+            <code class="green">// Fill with gradient</code><br>
+
+            <code>ctx.fillStyle = grd;</code> <br>
+
+            <code>ctx.fillRect(</code><code class="tomato"> 10</code> <code>,</code><code
+                class="tomato"> 10</code><code>,</code><code
+                class="tomato">150</code><code>,<code class="tomato"> 80</code></code><code>);</code><br>
+
+
+
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <p class="big">Draw Circular Gradient</p>
+    <img src="Screenshot 2024-08-18 144616.png" alt="no support">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br><br>
+
+            <code class="green">// Create gradient</code><br>
+
+            <code class="blue">var</code><code> grd = ctx.RadialGradient(</code><code class="tomato">75</code>
+            <code> ,</code></code><code class="tomato">50</code> <code>,</code></code><code class="tomato"> 5</code>
+            <code>,</code></code><code class="tomato"> 90</code><code>,</code><code
+                class="tomato"> 60</code><code>,</code> <code class="tomato"> 100</code><code>);</code><br>
+
+            <code>grd.addColorStop(</code> <code class="tomato">0</code> <code> ,</code><code
+                class="brown">"red"</code><code>);</code><br>
+            <code>grd.addColorStop(</code> <code class="tomato">1</code> <code> ,</code><code
+                class="brown">"white"</code><code>);</code><br><br>
+
+            <code class="green">// Fill with gradient</code><br>
+
+            <code>ctx.fillStyle = grd;</code> <br>
+
+            <code>ctx.fillRect(</code><code class="tomato"> 10</code> <code>,</code><code
+                class="tomato"> 10</code><code>,</code><code
+                class="tomato">150</code><code>,<code class="tomato"> 80</code></code><code>);</code><br>
+
+            <code>&lt;/script&gt;</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr><br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code>&lt;script&gt;</code><br>
+            <code class="blue">var</code><code> c = document.getElementById(</code><code
+                class="brown">"myCanvas"</code><code>);</code><br>
+
+            <code class="blue">var</code><code>ctx = c.getContext(</code><code
+                class="brown">"2d"</code><code>);</code><br>
+
+            <code class="blue">var</code><code> img = document.getElementById(</code><code
+                class="brown">"scream"</code><code>);</code><br>
+
+            <code>ctx.drawImage(img,</code><code class="tomato"> 10</code> <code>,</code><code
+                class="tomato"> 10</code><code>);</code><br>
+            <code>&lt;/script&gt;</code>
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <hr>
+    <br><br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

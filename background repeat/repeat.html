@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background repeat</title>
+    <link rel="stylesheet" href="repeat.css">
+</head>
+
+<body>
+    <h1>CSS Background Image Repeat</h1>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <h2>CSS background-repeat</h2>
+    <p>By default, the <span class="crimson-p">background-image</span> property repeats an image both horizontally and
+        vertically.</p>
+    <p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <p>Set the background image for a page:</p>
+        <div class="s-code-box">
+            <code class="brown">body </code><code>{</code><br>
+            <code class="tomato">background-image</code><code>: </code><code
+                class="blue">url("gradient_bg.png")</code><code>;</code>
+            <br><code>}</code>
+            <br>
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+
+    <p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+    </p>
+
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <p>Set the background image for a page:</p>
+        <div class="s-code-box">
+            <code class="brown">body </code><code>{</code><br>
+            <code class="tomato">background-image</code><code>: </code><code
+                class="blue">url("gradient_bg.png")</code><code>;</code>
+            <br>
+
+            <code class="tomato">background-repeat</code><code>: </code><code class="blue">repeat-x</code><code>;</code>
+            <br><code>}</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <p class="note"> <span class="big">Tip: </span>To repeat an image vertically, set background-repeat: repeat-y;</p>
+    <br>
+    <hr>
+    <h2>CSS background-repeat: no-repeat</h2>
+    <p>Showing the background image only once is also specified by the <span class="crimson-p">background-repeat</span>
+        property:</p><br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <p>Show the background image only once:</p>
+
+        <div class="s-code-box">
+            <code class="brown">body </code><code>{</code><br>
+            <code class="tomato">background-image</code><code>: </code><code
+                class="blue">url("gradient_bg.png")</code><code>;</code>
+            <br>
+
+            <code class="tomato">background-repeat</code><code>: </code><code
+                class="blue">no-repeat</code><code>;</code>
+            <br><code>}</code>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <p>In the example above, the background image is placed in the same place as the text. We want to change the
+        position of the image, so that it does not disturb the text too much.</p>
+
+    <br>
+    <hr>
+    <h2>CSS background-position</h2>
+
+    <p>The <span class="crimson-p">background-position</span> property is used to specify the position of the background
+        image.</p><br>
+
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <p>Position the background image in the top-right corner: </p>
+
+        <div class="s-code-box">
+            <code class="brown">body </code><code>{</code><br>
+            <code class="tomato">background-image</code><code>: </code><code
+                class="blue">url("img_tree.png")</code><code>;</code>
+            <br>
+
+            <code class="tomato">background-repeat</code><code>: </code><code
+                class="blue">no-repeat</code><code>;</code>
+            <br>
+            <code class="tomato">background-position</code><code>: </code><code
+                class="blue">right top</code><code>;</code>
+            <br>
+            <code>}</code>
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <br><br>
+
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br><br>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

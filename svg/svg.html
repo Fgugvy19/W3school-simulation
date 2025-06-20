@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg html</title>
+    <link rel="stylesheet" href="svg.css">
+</head>
+
+<body>
+    <h1>HTML SVG Graphics</h1>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <h2>SVG (Scalable Vector Graphics)</h2>
+    <p>SVG defines vector-based graphics in XML, which can be directly embedded in HTML pages.</p>
+    <p>SVG graphics are scalable, and do not lose any quality if they are zoomed or resized:</p>
+    <img src="Screenshot 2024-08-19 074315.png" alt="no images">
+    <br>
+    <p>SVG is supported by all major browsers.</p><br>
+    <hr>
+    <h2>What is SVG?</h2>
+    <ul>
+        <li>SVG stands for Scalable Vector Graphics</li>
+        <li>SVG is used to define vector-based graphics for the Web</li>
+        <li>SVG defines graphics in XML format</li>
+        <li>Each element and attribute in SVG files can be animated</li>
+        <li>SVG is a W3C recommendation</li>
+        <li>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</li>
+    </ul>
+    <br>
+    <hr>
+    <h2>The &lt;svg&gt; Element</h2>
+    <p>The HTML <span class="crimson-p">&lt;svg&gt;</span> element is a container for SVG graphics.</p>
+
+    <p>SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.</p>
+    <br>
+    <hr>
+    <h2>SVG Circle</h2>
+    <img src="Screenshot 2024-08-19 080537.png" alt="no image">
+
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+            <code class="blue">&lt;</code><code class="brown">!DOCTYPE </code><code class="tomato">html</code><code
+                class="blue">&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="tomato">html</code><code>&gt;</code>
+            <br>
+
+
+            <code class="blue">&lt;</code><code class="brown">svg </code><code class="tomato">width</code>
+            <code class="blue">="100"</code><code class="tomato">height</code><code class="blue">="100"</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">circle </code><code class="tomato">cx</code>
+            <code class="blue">="50"</code><code class="tomato">cy</code><code class="blue">="50"</code>
+            <code class="tomato">r</code><code class="blue">="40"</code><code class="tomato">stroke</code><code
+                class="blue">="green"</code><code class="tomato">stroke-width</code><code class="blue">="4"</code>
+            <code class="tomato">fill</code><code class="blue">="yellow"</code><code class="tomato">/</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">/svg</code></code><code class="blue">&gt;</code><br><br>
+            <code class="blue">&lt;</code><code class="brown">/body</code></code><code class="blue">&gt;</code><br>
+            <code class="blue">&lt;</code><code class="brown">/html</code></code><code class="blue">&gt;</code>
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>SVG Rectangle</h2>
+    <img src="Screenshot 2024-08-19 080709.png" alt="no imaage">
+    <br>
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">svg </code><code class="tomato">width</code>
+            <code class="blue">="400" </code><code class="tomato">height</code><code class="blue">="120"</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">rect </code><code class="tomato">x</code>
+            <code class="blue">="10"</code><code class="tomato">y</code><code class="blue">="10"</code>
+            <code class="tomato">width</code><code class="blue">="200"</code><code class="tomato">height</code><code
+                class="blue">="200"</code><code class="tomato">stroke</code><code class="blue">="red"</code><code
+                class="tomato">stroke-width</code><code class="blue">="6"</code>
+            <code class="tomato">fill</code><code class="blue">="blue"</code><code class="tomato">/</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">/svg</code></code><code class="blue">&gt;</code>
+
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>SVG Rectangle with Opacity and Rounded Corners</h2>
+    <img src="Screenshot 2024-08-19 081112.png" alt="no images">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">svg </code><code class="tomato">width</code>
+            <code class="blue">="400" </code><code class="tomato">height</code><code class="blue">="180"</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">rect </code><code class="tomato">x</code>
+            <code class="blue">="50"</code><code class="tomato">y</code><code class="blue">="20"</code>
+            <code class="tomato">rx</code><code class="blue">="20"</code><code class="tomato">ry</code><code
+                class="blue">="20"</code>
+            <code class="tomato">width</code><code class="blue">="150"</code><code class="tomato">height</code><code
+                class="blue">="150"</code><br>
+            <code class="tomato">stroke</code><code class="blue">="red"</code><code class="tomato">style</code><code
+                class="blue">="fill:red;stroke:black;stroke-width:5;opacity:0.5"</code>
+            <code class="tomato">/</code><code class="blue">&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">/svg</code></code><code class="blue">&gt;</code>
+
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>SVG Star</h2>
+    <img src="Screenshot 2024-08-19 081531.png" alt="no images">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+
+            <code class="blue">&lt;</code><code class="brown">svg </code><code class="tomato">width</code>
+            <code class="blue">="300" </code><code class="tomato">height</code><code class="blue">="200"</code>
+            <code class="blue">"&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">polygon </code><code class="tomato">points</code>
+            <code class="blue">="100,10 40,198 190,78 10,78 160,198"</code><br>
+            <code class="tomato">style</code><code
+                class="blue">="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"</code>
+            <code class="tomato">/</code><code class="blue">&gt;</code>
+            <br>
+
+            <code class="blue">&lt;</code><code class="brown">/svg</code></code><code class="blue">&gt;</code>
+
+
+            <br>
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+    <h2>SVG Gradient Ellipse and Text</h2>
+    <img src="Screenshot 2024-08-19 082033.png" alt="no images">
+    <div class="b-code-box">
+        <h3>Example</h3>
+        <div class="s-code-box">
+
+            <code class="blue">&lt;</code><code class="brown">svg </code><code class="tomato">width</code>
+            <code class="blue">="500" </code><code class="tomato">height</code><code class="blue">="130"</code>
+            <code class="blue">&gt;</code>
+            <br>
+            <code class="blue">&lt;</code><code class="brown">linearGradient </code><code class="tomato">id</code>
+            <code class="blue">="grad1"&gt;</code><br>
+
+            <code class="blue">&lt;</code><code class="brown">stop </code> <code class="tomato">offset</code>
+            <code class="blue">="0%"</code><code class="tomato"> stop-color</code><code class="blue">="yellow"</code>
+            <code class="tomato"> /</code><code class="blue">&gt;</code><br>
+
+
+            <code class="blue">&lt;</code><code class="brown">stop </code> <code class="tomato">offset</code>
+            <code class="blue">="100%"</code><code class="tomato"> stop-color</code><code class="blue">="red"</code>
+            <code class="tomato"> /</code><code class="blue">&gt;</code><br>
+
+            <code class="blue">&lt;</code><code class="brown">/linearGradient</code><code class="blue">&gt;</code><br>
+            <code class="blue">&lt;</code><code class="brown">/defs</code><code class="blue">&gt;</code><br>
+
+
+            <code class="blue">&lt;</code><code class="brown">ellipse </code> <code class="tomato">cx</code>
+            <code class="blue">="100"</code><code class="tomato">cy</code><code class="blue">="70"</code>
+            <code class="tomato">rx</code><code class="blue">="85"</code><code class="tomato">ry</code>
+            <code class="blue">="55"</code><code class="tomato">fill</code><code class="blue">="url(#grad1)"</code>
+            <code class="tomato"> /</code><code class="blue">&gt;</code><br>
+
+            <code class="blue">&lt;</code><code class="brown">text </code> <code class="tomato">fill</code>
+            <code class="blue">="#ffffff"</code><code class="tomato">font-size</code><code class="blue">="45"</code>
+            <code class="tomato">font-family</code><code class="blue">="Verdana"</code><code class="tomato">x</code>
+            <code class="blue">="50"</code><code class="tomato">y</code><code class="blue">="86"></code><code
+                class="blue">&lt;</code><code>SVG</code>
+
+            <code class="brown">/text</code><code class="blue">&gt;</code><br>
+
+            <code>Sorry, your browser does not support inline SVG.</code><br>
+
+            <code class="blue">&lt;</code><code class="brown">/svg</code><code class="blue">&gt;</code><br>
+
+
+
+        </div>
+        <br>
+        <a href="" class="try-it">try it yourself</a>
+    </div>
+    <br>
+    <hr>
+
+    <h2>Differences Between SVG and Canvas</h2>
+    <p>SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on the fly (with
+        JavaScript).</p>
+    <p>SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event
+        handlers to SVG graphics.</p>
+    <p>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can
+        automatically re-render the shape.</p>
+    <p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its
+        position should be changed, the entire scene needs to be redrawn, including any objects that might have been
+        covered by the graphic.</p>
+    <br>
+    <hr>
+    <h2>Comparison of SVG and Canvas</h2>
+    <p>The table below shows some important differences between Canvas and SVG:</p>
+    <table>
+        <tbody>
+            <tr>
+                <th>SVG</th>
+                <th>Canvas</th>
+
+            </tr>
+            <tr>
+                <td class="e">
+                    <ul>
+
+                        <li>Resolution independent</li>
+                        <li>Support for event handlers</li>
+                        <li>Good text rendering capabilities</li>
+                        <li>Slow rendering if complex</li>
+                        <li>Not suited for game applications</li>
+                    </ul>
+                </td>
+
+                <td class="e">
+                    <ul>
+
+                        <li>Resolution dependent</li>
+                        <li>No support for event handlers</li>
+                        <li>Poor text rendering capabilities</li>
+                        <li>You can save the resulting image as .png or .jpg</li>
+                        <li>Well suited for graphic-intensive games</li>
+                    </ul>
+                </td>
+            </tr>
+
+            </td>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <div class="nextprevious">
+        <a href="" target="_blank" class="prev"><b>&lt;previous</b></a>
+        <a href="" class="next" target="_blank"><b>next&gt;</b></a>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>
